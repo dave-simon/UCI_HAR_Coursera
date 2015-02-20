@@ -5,11 +5,10 @@ date: "20 de fevereiro de 2015"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-## Getting and Cleaning Data - Project
+## Getting and Cleaning Data - Course Project
 
-The source data set:
+In order to complete the project, one had to go to the following URL for the source data set:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -27,7 +26,6 @@ According to the instructions provided by the course, the following activities a
     5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 All of these steps are labeled accordingly in the .R script file.
-
 
 ## Notes
 
@@ -48,7 +46,7 @@ xcomplete <- xcomplete[, index_features]
 
 Constructed with the following version of R
 
-```R
+```{r}
 > version
                _                           
 platform       x86_64-apple-darwin13.4.0   
@@ -68,10 +66,6 @@ nickname       Pumpkin Helmet
 
 at [1] "Fri Feb 20 18:04:18 2015"
 
-##  Running
-
-```bash
-$ Rscript run_analysis.R
 ```
 
-it results on tidydata.txt and tidydatamean.txt files. 
+The script file run_analysis.R results on tidydata.txt and tidydatamean.txt files. 
